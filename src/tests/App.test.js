@@ -4,7 +4,7 @@ import { MemoryRouter, Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import App from '../App';
 
-describe('Testando Pokédex', () => {
+describe('Testando App.js', () => {
   test('Testando a renderização dos links Home, About e Favorite Pokémons', () => {
     render(
       <MemoryRouter>
