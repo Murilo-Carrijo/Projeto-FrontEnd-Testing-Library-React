@@ -1,0 +1,1312 @@
+19:24:49 (19597) INFO ConfigReader Using stryker.conf.json
+19:24:49 (19597) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+19:24:49 (19597) DEBUG ConfigReader Loading config /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker.conf.json
+19:24:49 (19597) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/components/About.js",
+    "src/App.js",
+    "src/components/FavoritePokemons.js",
+    "src/components/NotFound.js",
+    "src/components/Pokedex.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker.conf.json"
+}
+19:24:49 (19597) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:49 (19597) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:49 (19597) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:49 (19597) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:49 (19597) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:49 (19597) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:49 (19597) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+19:24:49 (19597) INFO InputFileResolver Found 7 of 63 file(s) to be mutated.
+19:24:49 (19597) DEBUG InputFileResolver All input files: [
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker.log",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.babelrc.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.eslintignore",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.eslintrc.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.gitignore",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stylelintignore",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stylelintrc.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/README.md",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/package-lock.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/package.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/favicon.ico",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/index.html",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/logo192.png",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/logo512.png",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/manifest.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/robots.txt",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/public/star-icon.svg",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Button.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/about.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/button.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/favorite-pokemons.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/index.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/not-found.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/pokedex.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/pokemon-details.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/data.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/index.css",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/index.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/logo.svg",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/setupTests.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/types/index.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/testefalhando.png",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/testepassando.png",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/trybe.yml"
+]
+19:24:49 (19597) DEBUG InputFileResolver Files to mutate: [
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js"
+]
+19:24:49 (19597) DEBUG TemporaryDirectory Using temp directory "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp"
+19:24:49 (19597) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+19:24:49 (19597) INFO InitialTestExecutor Starting initial test run. This may take a while.
+19:24:49 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5545549
+19:24:49 (19597) DEBUG Sandbox Creating test runner 0
+19:24:49 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19622
+19:24:50 (19622) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5545549
+19:24:50 (19622) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:50 (19622) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:50 (19622) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:50 (19622) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:50 (19622) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:50 (19622) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:50 (19622) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5545549"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:50 (19597) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+19:24:50 (19622) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:50 (19622) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5545549
+19:24:50 (19622) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5545549","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:55 (19597) DEBUG ChildProcessProxy Disposing of worker process 19622
+19:24:55 (19597) DEBUG ChildProcessProxy Kill 19622
+19:24:55 (19597) INFO InitialTestExecutor Initial test run succeeded. Ran 7 tests in 5 seconds (net 168 ms, overhead 4917 ms).
+19:24:55 (19597) DEBUG BabelParser Using options {"plugins":["asyncGenerators","bigInt","classProperties","dynamicImport","flow","jsx","objectRestSpread",["decorators",{"decoratorsBeforeExport":true}]],"sourceType":"unambiguous"}
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code "`About ` - `Pokédex`"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/About.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "`No favorite ` - `pokemon found`"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "pokemons.length !== ZERO"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/FavoritePokemons.js with replacement code "["Stryker was here"]"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code "`Page requested ` - `not found`"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/NotFound.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "(state.pokemonIndex + 1) * numberOfPokemons"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "state.pokemonIndex - 1"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "filteredType !== 'all'"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "pokemon.type !== filteredType"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "[]"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "[]"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "["Stryker was here"]"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "filteredPokemons.length < 1"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "filteredPokemons.length > 1"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "showDetailsLink || <Link to={`pokemons/${id}`}>More details</Link>"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "isFavorite || <img className="favorite-icon" src={`/star-icon.svg`} alt={`${name} is marked as favorite`} />"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokemon.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "`Game Locations of ` - `${name}`"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "`${name} ` - `location`"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "false"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "id !== givenId"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArrowFunction in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "() => undefined"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "`${pokemon.name} ` - `Details`"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code """"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "true"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/PokemonDetails.js with replacement code "{}"
+19:24:55 (19597) INFO MutatorFacade 32 Mutant(s) generated (94 Mutant(s) excluded)
+19:24:55 (19597) INFO SandboxPool Creating 12 test runners (based on CPU count)
+19:24:55 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249
+19:24:55 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658
+19:24:55 (19597) DEBUG Sandbox Creating test runner 0
+19:24:55 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19714
+19:24:55 (19597) DEBUG Sandbox Creating test runner 1
+19:24:55 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19720
+19:24:56 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049
+19:24:55 (19714) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249
+19:24:55 (19714) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:55 (19714) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:55 (19714) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:55 (19714) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:56 (19714) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:56 (19714) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:56 (19714) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:56 (19714) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:56 (19714) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249
+19:24:56 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:56 (19714) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:56 (19597) DEBUG Sandbox Creating test runner 2
+19:24:56 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19774
+19:24:56 (19714) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249/src/App.js
+19:24:56 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936
+19:24:56 (19720) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658
+19:24:56 (19720) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:56 (19720) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:56 (19720) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:56 (19720) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:56 (19720) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:56 (19720) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:56 (19720) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:56 (19720) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:56 (19720) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658
+19:24:56 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:56 (19720) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:56 (19720) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658/src/App.js
+19:24:56 (19597) DEBUG Sandbox Creating test runner 3
+19:24:56 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19781
+19:24:56 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894
+19:24:56 (19781) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936
+19:24:56 (19781) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:56 (19781) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:56 (19781) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:56 (19781) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:56 (19781) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:56 (19781) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:56 (19781) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:56 (19781) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:56 (19781) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936
+19:24:56 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:56 (19774) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049
+19:24:56 (19774) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:56 (19774) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:56 (19774) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:56 (19774) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:56 (19774) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:56 (19774) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:56 (19774) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:56 (19774) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:56 (19774) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049
+19:24:56 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080
+19:24:56 (19781) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:56 (19781) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936/src/App.js
+19:24:56 (19597) DEBUG Sandbox Creating test runner 4
+19:24:56 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19800
+19:24:56 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:56 (19774) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:56 (19774) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049/src/components/About.js
+19:24:56 (19597) DEBUG Sandbox Creating test runner 5
+19:24:57 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19806
+19:24:57 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785
+19:24:57 (19800) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894
+19:24:57 (19800) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:57 (19800) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:57 (19800) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:57 (19800) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:57 (19800) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:57 (19800) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:57 (19800) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:57 (19800) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:57 (19800) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894
+19:24:57 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:57 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151
+19:24:57 (19806) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080
+19:24:57 (19806) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:57 (19806) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:57 (19806) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:57 (19806) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:57 (19806) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:57 (19806) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:57 (19806) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:57 (19800) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:57 (19800) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894/src/components/About.js
+19:24:57 (19806) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:57 (19806) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080
+19:24:57 (19597) DEBUG Sandbox Creating test runner 6
+19:24:57 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19852
+19:24:57 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:57 (19806) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:57 (19806) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080/src/components/About.js
+19:24:57 (19597) DEBUG Sandbox Creating test runner 7
+19:24:57 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19858
+19:24:58 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785
+19:24:58 (19858) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151
+19:24:58 (19858) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:58 (19858) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:58 (19858) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:58 (19858) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:58 (19858) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:58 (19858) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:58 (19858) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:58 (19858) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:58 (19858) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151
+19:24:58 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:58 (19858) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:58 (19858) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151/src/components/FavoritePokemons.js
+19:24:58 (19597) DEBUG Sandbox Creating test runner 8
+19:24:58 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19906
+19:24:58 (19852) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785
+19:24:58 (19852) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:58 (19852) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:58 (19852) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:58 (19852) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:58 (19852) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:58 (19852) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:58 (19852) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:58 (19852) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:58 (19852) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785
+19:24:58 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606
+19:24:58 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:58 (19852) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:58 (19852) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785/src/components/FavoritePokemons.js
+19:24:58 (19597) DEBUG Sandbox Creating test runner 9
+19:24:58 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19912
+19:24:59 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189
+19:24:59 (19912) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606
+19:24:59 (19912) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:59 (19912) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:59 (19912) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:59 (19912) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:59 (19912) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:59 (19912) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:59 (19912) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:59 (19912) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:59 (19912) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606
+19:24:59 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:59 (19912) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:59 (19912) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606/src/components/NotFound.js
+19:24:59 (19597) DEBUG Sandbox Creating test runner 10
+19:24:59 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19932
+19:24:59 (19597) DEBUG Sandbox Creating a sandbox for files in /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935
+19:24:59 (19906) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785
+19:24:59 (19906) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:24:59 (19906) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:59 (19906) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:24:59 (19906) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:24:59 (19906) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:24:59 (19906) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:59 (19906) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:24:59 (19906) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:24:59 (19906) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785
+19:24:59 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:24:59 (19906) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:24:59 (19906) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785/src/components/NotFound.js
+19:24:59 (19597) DEBUG Sandbox Creating test runner 11
+19:24:59 (19597) DEBUG ChildProcessProxy Starting /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 19939
+19:25:00 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:00 (19932) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189
+19:25:00 (19932) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:25:00 (19932) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:25:00 (19932) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:25:00 (19932) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:25:00 (19932) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:25:00 (19932) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:25:00 (19932) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:25:00 (19932) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:25:00 (19932) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189
+19:25:00 (19932) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:00 (19932) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189/src/components/NotFound.js
+19:25:00 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:00 (19939) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935
+19:25:00 (19939) DEBUG PluginLoader Loading @stryker-mutator/* from /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator
+19:25:00 (19939) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:25:00 (19939) DEBUG PluginLoader Loading plugin "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+19:25:00 (19939) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+19:25:00 (19939) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+19:25:00 (19939) DEBUG PluginLoader Loading plugins /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:25:00 (19939) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+19:25:00 (19939) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+19:25:00 (19939) DEBUG JestTestRunner Project root is /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935
+19:25:00 (19939) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:00 (19939) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935/src/components/Pokedex.js
+19:25:05 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:05 (19714) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:05 (19714) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249/src/components/Pokedex.js
+19:25:05 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:05 (19774) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:05 (19774) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049/src/components/Pokedex.js
+19:25:05 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:05 (19720) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:05 (19720) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658/src/components/Pokedex.js
+19:25:05 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:05 (19781) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:05 (19781) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936/src/components/Pokedex.js
+19:25:06 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:06 (19806) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:06 (19806) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080/src/components/Pokemon.js
+19:25:06 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:06 (19800) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:06 (19800) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894/src/components/Pokemon.js
+19:25:06 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:06 (19714) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:06 (19714) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249/src/components/Pokemon.js
+19:25:06 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:06 (19774) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:06 (19774) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049/src/components/Pokemon.js
+19:25:06 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:07 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:07 (19852) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:07 (19852) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox4930785/src/components/Pokemon.js
+19:25:07 (19858) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:07 (19858) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2682151/src/components/Pokemon.js
+19:25:07 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:07 (19720) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:07 (19720) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5947658/src/components/PokemonDetails.js
+19:25:07 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:07 (19906) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:07 (19906) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox9731785/src/components/PokemonDetails.js
+19:25:07 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:07 (19912) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:07 (19912) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1087606/src/components/PokemonDetails.js
+19:25:08 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:08 (19781) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:08 (19781) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1799936/src/components/PokemonDetails.js
+19:25:08 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:08 (19939) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:08 (19939) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox5875935/src/components/PokemonDetails.js
+19:25:08 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:08 (19932) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:08 (19932) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox340189/src/components/PokemonDetails.js
+19:25:08 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:08 (19774) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:08 (19774) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox3544049/src/components/PokemonDetails.js
+19:25:08 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:08 (19714) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:08 (19714) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox6526249/src/components/PokemonDetails.js
+19:25:09 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:09 (19806) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:09 (19806) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox1879080/src/components/PokemonDetails.js
+19:25:09 (19597) DEBUG TimeoutDecorator Starting timeout timer (10169 ms) for a test run
+19:25:09 (19800) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"/home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+19:25:09 (19800) TRACE JestLessThan25TestAdapter Only running tests related to /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp/sandbox2745894/src/components/PokemonDetails.js
+19:25:10 (19597) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+19:25:10 (19597) DEBUG ClearTextReporter 0. [Killed] StringLiteral
+19:25:10 (19597) DEBUG ClearTextReporter /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js:98:41
+19:25:10 (19597) DEBUG ClearTextReporter [31m-             <Link className="link" to="/">{`Home`}</Link>[39m
+19:25:10 (19597) DEBUG ClearTextReporter [32m+             <Link className="link" to="/">{""}</Link>[39m
+19:25:10 (19597) DEBUG ClearTextReporter 
+19:25:10 (19597) DEBUG ClearTextReporter Ran all tests for this mutant.
+19:25:10 (19597) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+19:25:10 (19597) DEBUG ClearTextReporter 2. [Killed] StringLiteral
+19:25:10 (19597) DEBUG ClearTextReporter /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js:99:46
+19:25:10 (19597) DEBUG ClearTextReporter [31m-             <Link className="link" to="/about">{`About`}</Link>[39m
+19:25:10 (19597) DEBUG ClearTextReporter [32m+             <Link className="link" to="/about">{""}</Link>[39m
+19:25:10 (19597) DEBUG ClearTextReporter 
+19:25:10 (19597) DEBUG ClearTextReporter Ran all tests for this mutant.
+19:25:10 (19597) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+19:25:10 (19597) DEBUG ClearTextReporter 3. [Killed] StringLiteral
+19:25:10 (19597) DEBUG ClearTextReporter /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/App.js:100:50
+19:25:10 (19597) DEBUG ClearTextReporter [31m-             <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>[39m
+19:25:10 (19597) DEBUG ClearTextReporter [32m+             <Link className="link" to="/favorites">{""}</Link>[39m
+19:25:10 (19597) DEBUG ClearTextReporter 
+19:25:10 (19597) DEBUG ClearTextReporter Ran all tests for this mutant.
+19:25:10 (19597) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+19:25:10 (19597) DEBUG ClearTextReporter 6. [Killed] StringLiteral
+19:25:10 (19597) DEBUG ClearTextReporter /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js:29:27
+19:25:10 (19597) DEBUG ClearTextReporter [31m-         if (filteredType === 'all') return true;[39m
+19:25:10 (19597) DEBUG ClearTextReporter [32m+         if (filteredType === "") return true;[39m
+19:25:10 (19597) DEBUG ClearTextReporter 
+19:25:10 (19597) DEBUG ClearTextReporter Ran all tests for this mutant.
+19:25:10 (19597) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+19:25:10 (19597) DEBUG ClearTextReporter 14. [Killed] StringLiteral
+19:25:10 (19597) DEBUG ClearTextReporter /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/src/components/Pokedex.js:11:50
+19:25:10 (19597) DEBUG ClearTextReporter [31m-       this.state = { pokemonIndex: 0, filteredType: 'all' };[39m
+19:25:10 (19597) DEBUG ClearTextReporter [32m+       this.state = { pokemonIndex: 0, filteredType: "" };[39m
+19:25:10 (19597) DEBUG ClearTextReporter 
+19:25:10 (19597) DEBUG ClearTextReporter Ran all tests for this mutant.
+19:25:10 (19597) DEBUG HtmlReporter No base folder configuration found (using configuration: htmlReporter: { baseDir: 'output/folder' }), using default reports/mutation/html
+19:25:10 (19597) DEBUG MutationTestReportCalculator No breaking threshold configured. Won't fail the build no matter how low your mutation score is. Set `thresholds.break` to change this behavior.
+19:25:10 (19597) INFO HtmlReporter Your report can be found at: file:///home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/reports/mutation/html/index.html
+19:25:10 (19597) INFO Stryker Done in 21 seconds.
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19774
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19720
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19714
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19800
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19781
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19852
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19858
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19939
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19906
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19932
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19806
+19:25:10 (19597) DEBUG ChildProcessProxy Disposing of worker process 19912
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19852
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19774
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19720
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19800
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19858
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19939
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19906
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19932
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19912
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19781
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19714
+19:25:10 (19597) DEBUG ChildProcessProxy Kill 19806
+19:25:10 (19597) DEBUG TemporaryDirectory Deleting stryker temp directory /home/murilo/Documentos/turma-15-b/projetos/sd-015-b-project-react-testing-library/.stryker-tmp

@@ -1,3 +1,1 @@
-test('', () => {a});
-
-// Iniciando projeto;
+test('', () => {});
